@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator Malarza</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top">
+            <h1>kalkulator malarza</h1>
+            <p>Policz ile potrzebujesz farby</p>
+        </div>
+        <div class="bottom">
+            <label for="painting">Ilość metrów kwadratowych:</label>
+            <input type="number" id="painting">
+
+            <label for="times">Ile razy malujesz?</label>
+            <input type="number" id="times">
+
+            <label for="type">Rodzaj farby</label>
+            <select id="type">
+                <option value="0" disabled selected>- wybierz farbę -</option>
+                <option value="14">Farba akrylowa</option>
+                <option value="15">farba lateksowa</option>
+                <option value="8">Emalia</option>
+            </select>
+
+            <button class="count">Oblicz</button>
+            <p class="error"></p>
+            <p class="quantity-info">Powinieneś kupić <span class="quantity"></span> litrów :)</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
